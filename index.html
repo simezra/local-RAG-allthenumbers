@@ -132,10 +132,6 @@ footer{padding-top:56px;padding-bottom:72px;color:var(--muted);font-size:15px}
 <p class="small">I also tried hybrid search (keywords plus vectors). It found the right entry no more often, and refusals dropped (Gemma 12/18, Qwen 7/18), so search stays vector-only.</p>
 </section>
 
-<section aria-labelledby="h-scale">
-<h2 id="h-scale">At larger scale</h2>
-<p>The app talks to the model through an OpenAI-compatible API, so the laptop server could be replaced by vLLM or llama.cpp on Kubernetes, or by a managed endpoint, without code changes. For users in many countries I'd expect to deploy the same stack per region to keep data in place, check that the embedding model and the eval cover every language in use, and fail over only to regions allowed to hold that data. Traffic across time zones also leaves little quiet time for batch jobs.</p>
-</section>
 </main>
 <footer><p>Built November 22, 2026; this replay was recorded November 25, 2026.</p></footer>
 
